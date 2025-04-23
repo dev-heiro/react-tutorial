@@ -4,10 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import Demo from './Demo';
+import Root from './Root';
+import Nav from './Nav';
+import OnePiece from './OnePiece';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   <Demo />
+   <OnePiece />
 );
 
 // If you want to start measuring performance in your app, pass a function

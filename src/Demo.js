@@ -13,7 +13,7 @@ export default function Demo() {
         <>
             <DemoHeader />
             <DemoMain />
-            <DemoFooter company={company} />
+            <DemoFooter company="코드노바" />
         </ >
     );
 }
