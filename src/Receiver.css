@@ -1,0 +1,33 @@
+.receiver-container {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.receiver-input {
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  flex: 1;
+}
+.receiver-input:focus {
+  outline: none;
+}
+.receiver-item {
+  display: flex;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: khaki;
+  align-items: center;
+  gap: 10px;
+}
+.receiver-item span {
+  font-size: 1.2em;
+  display: block;
+}
+.receiver-item button {
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(223, 201, 11);
+}
