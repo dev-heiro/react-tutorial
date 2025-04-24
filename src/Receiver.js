@@ -15,26 +15,21 @@ function Receiver() {
       }
       setAddress([...address, evt.target.value]);
       evt.target.value = "";
-      evt.preventDefault();
+      // evt.preventDefault();
     }
-  };
-
-  const clickHandle = function (evt) {
-    // console.log(evt.target.value);
-    const newAddress = [];
-    for (let i = 0; i < address.length; i++) {
-      if (address[i] !== evt.target.value) {
-        newAddress.push(address[i]);
-      }
-    }
-    console.log(newAddress);
-    setAddress(newAddress);
   };
 
   return (
     <div className="receiver-container">
       {address.map((elm, idx) => {
-        return <ReceiverItem />;
+        return (
+          <ReceiverItem
+            value={elm}
+            key={idx}
+            address={address}
+            setAddress={setAddress}
+          />
+        );
       })}
       <input className="receiver-input" onKeyDown={keyDownHandle} />
     </div>
